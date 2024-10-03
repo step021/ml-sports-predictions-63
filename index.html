@@ -16,19 +16,17 @@
         .container {
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 80%;
             height:100%;
-            max-width: 100%;
+            max-width: 80%;
             max-height: 100%;
         }
-        .table {
+        table, th, td {
             border: 1px solid black;
+            border-collapse: collapse;
         }
-        .tr{
-            border: 1px solid black;
-        }
-        .td{
-            border: 1px solid black;
+        th, td {
+            padding: 8px;
         }
     </style>
 </head>
@@ -45,7 +43,7 @@
         <p>The dataset we have chosen contains team data for each game of the NFL season from 2002-2023. Each row is an NFL game and each column is information about the game statistics such as location, box scores, or time of possession.
         </p>
         <h4>Dataset Link</h4>
-        <href>hhttps://www.kaggle.com/datasets/cviaxmiwnptr/nfl-team-stats-20022019-espn</href>
+        <a href="https://www.kaggle.com/datasets/cviaxmiwnptr/nfl-team-stats-20022019-espn" target="_blank">NFL Team Stats Dataset</a>
         <h2>Problem Definition</h2>
         <h3>Problem</h3>
         <p>It is currently difficult to predict the outcome of NFL games due to the complexity of the game and randomness involved. We aim to solve this problem by creating an ML model using pre-game statistics to predict the outcome of matchups.
@@ -117,7 +115,8 @@
         </table>
         <h2>Gantt Chart</h2>
         <h2>Video</h2>
-        <href src="https://youtu.be/RGoozdTksFo">Video Presentation</href>
+        <a href="https://youtu.be/RGoozdTksFo" target="_blank">Video Presentation</a>
+
     </div>
 </body>
 </html>
