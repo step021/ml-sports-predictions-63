@@ -13,22 +13,98 @@
             justify-content: center;
             align-items: center;
         }
-        .pdf-container {
-            width: 80%;
-            height: 90vh; /* Adjust height as needed */
-            display: flex;
+        .container {
             justify-content: center;
             align-items: center;
-        }
-        embed {
-            width: 100%;
-            height: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="pdf-container">
-        <embed src="ML Proposal.pdf" type="application/pdf">
+    <div class="container">
+        <h1>ML Project Proposal</h1>
+        <h2>Introduction/Background</h2>
+        <p>In this project, we will utilize ML algorithms to predict the final score, spread, and total points of NFL games by training on historic data and testing on the 2023 season outcomes.
+        </p>
+        <h3>Literature Review</h3>
+        <p>Our main literature review comes from the University of Michigan, where students used neural networks to predict the outcomes of college football games by running 5 different regression models. This study is trained on years of historical data on various team metrics and tested on live results. Their output shows that Lasso Regression was the most effective predictor; however, there is room for continuous improvement in this space, which we hope to capture by analyzing the NFL rather than NCAA play [2].
+        </p>
+        <h3>Dataset Description</h3>
+        <p>The dataset we have chosen contains team data for each game of the NFL season from 2002-2023. Each row is an NFL game and each column is information about the game statistics such as location, box scores, or time of possession.
+        </p>
+        <h4>Dataset Link</h4>
+        <href>hhttps://www.kaggle.com/datasets/cviaxmiwnptr/nfl-team-stats-20022019-espn</href>
+        <h2>Problem Definition</h2>
+        <h3>Problem</h3>
+        <p>It is currently difficult to predict the outcome of NFL games due to the complexity of the game and randomness involved. We aim to solve this problem by creating an ML model using pre-game statistics to predict the outcome of matchups.
+        </p>
+        <h3>Motivation</h3>
+        <p>In this study we aim to reduce uncertainty in the field of sports forecasting and fill in the gaps of existing research on predicting outcomes as a whole through the contained sample size of the NFL. This study has practical and fiscal applications in the fields of sports forecasting, betting markets, and team strategy development.
+        </p>
+        <h2>Methods</h2>
+        <h3>Data Preprocessing Methods</h3>
+        <ol>
+            <li>Data Cleaning: We plan to remove seasons prior to the 2007 seasons due to inconsistencies. We also plan on saving data from the 2023 season for testing.
+            </li>
+            <li>Dimensionality Reduction: Of the 61 features present in our dataset, there are numerous which we do not think are statistically significant (date, time, etc.).</li>
+            <li>Normalization of Features: Many features in our dataset encompass vastly different ranges of possible values. By normalizing the data we ensure that “all features contribute equally to the final prediction” [1].
+            </li>
+        </ol>
+        <h3>ML Algorithms</h3>
+        <ol>
+            <li>Neural Net: This would handle the roughly 13,000 data points with ease, and it would be able to account for the diversity of both quantitative and categorical features [3].
+            </li>
+            <li>K-Means: This would be useful to cluster teams into groups based on their relative strength. This could be helpful for assessing trends in these clusters.
+            </li>
+            <li>Random Forests: This would reduce overfitting and be more resilient to noise in the datasets, useful for predicting the complex non-linear aspects of NFL games.</li>
+        </ol>
+        <h2>Results/Discussion</h2>
+        <h3>Quantitative Metrics</h3>
+        <ol>
+            <li>Root Mean-Squared Error: RMSE is ideal for neural networks and random forests because they predict continuous values. A low RMSE value would demonstrate the model is effectively predicting scores with minimal error.
+            </li>
+            <li>Mean Absolute Error: This would work well for our algorithms because it’s not highly sensitive to outliers, which could give us a better understanding of the difference between actual and predicted values.
+            </li>
+            <li>Coefficient of Determination: This is useful for neural networks and random forests because it indicates how well the model fits the data by assessing the variance relationship between results.
+            </li>
+        </ol>
+        <h3>Project Goals/Expecte Results</h3>
+        <p>The goal is to predict the final score, spread, and total points for NFL games. We are aiming to predict the winner of the spread correctly 53% of the time, as this metric constitutes a model as “profitable” through attaining benchmarks of an RMSE of <5, MAE of <6, and an R^2 of >0.80 [4].
+        </p>
+        <h2>References</h2>
+        <p>[1]S. Jaiswal, “What is Normalization in Machine Learning? A Comprehensive Guide to Data Rescaling,” Datacamp.com, Jan. 04, 2024. https://www.datacamp.com/tutorial/normalization-in-machine-learning (accessed Oct. 02, 2024).</p>
+        <p>‌[2]L. Boll, “Gridiron Genius: Using Neural Networks to Predict College Football,” Umich.edu, 2023, doi: https://hdl.handle.net/2027.42/176935.</p>
+        <p>[3]B. Radjewski, “Talking Tech: Building an Artifical Neural Network to Predict Games,” CFBD Blog, Nov. 12, 2021. https://blog.collegefootballdata.com/talking-tech-building-an-artifical-neural-network-to/ (accessed Oct. 02, 2024).</p>
+        <p>[4]“Predicting NFL Total Score and Point Spread Bets,” Qu.edu, May 17, 2024. https://iq.qu.edu/experiential-learning/course-projects-and-capstones/student-projects/predicting-nfl-total-score-and-point-spread-bets/ (accessed Oct. 02, 2024).</p>
+        <h2>Contribution Table</h2>
+        <table>
+            <tr>
+                <th>Member</th>
+                <th>Contribution</th>
+            </tr>
+            <tr>
+                <td>Reuben Covey</td>
+                <td>Created the video presentation. Defined the problem and motivation in the proposal.</td>
+            </tr>
+            <tr>
+                <td>Sebastian Stephens</td>
+                <td>Created the GitHub repository and pages as well as made the project timeline gantt chart.</td>
+            </tr>
+            <tr>
+                <td>Sofia Varmeziar</td>
+                <td>Researched quantitative metrics we could use to test the outputs of our model. Defined our goals and expectations for the project.</td>
+            </tr>
+            <tr>
+                <td>Greyson McReynolds</td>
+                <td>Researched data pre-processing techniques and ML algorithms that we could feasibly use to complete the project.</td>
+            </tr>
+            <tr>
+                <td>Sam Deckbar</td>
+                <td>Researched past literature on the subject, did the introductory part of the proposal, and found a good dataset to use for our project. </td>
+            </tr>
+        </table>
+        <h2>Gantt Chart</h2>
+        <h2>Video</h2>
+        <href src="https://youtu.be/RGoozdTksFo">Video Presentation</href>
     </div>
 </body>
 </html>
