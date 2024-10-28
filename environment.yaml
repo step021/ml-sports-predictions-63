@@ -1,0 +1,20 @@
+name: nfl_score_prediction_env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - pytorch
+  - torchvision
+  - torchaudio
+  - jupyter
+  - cpuonly  # Replace with `cudatoolkit=11.3` if using a GPU
+
+
+#Run "conda env create -f environment.yaml"
+#To activate, run "conda activate nfl_score_prediction_env"
