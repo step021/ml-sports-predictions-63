@@ -21,7 +21,7 @@ class MultiOutputNN(nn.Module):
         return x
 
 # Load and prepare the training data
-data = pd.read_csv("TRAINING_DATA.csv")  # Load pre-scaled data
+data = pd.read_csv("TRAINING_2.csv")  # Load pre-scaled data
 
 # Separate features and target variables
 X = data.drop(["score_away", "score_home"], axis=1).values  # Drop target columns
@@ -42,7 +42,7 @@ criterion = nn.MSELoss()  # Mean Squared Error for regression
 optimizer = optim.Adam(model.parameters(), lr=0.0005)  # Corrected learning rate
 
 # Training the model
-epochs = 150
+epochs = 300
 for epoch in range(epochs):
     model.train()
     optimizer.zero_grad()

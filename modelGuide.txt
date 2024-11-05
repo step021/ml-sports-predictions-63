@@ -19,6 +19,4 @@ TO TEST THE MODEL:
 
 CURRENT ISSUES:
 
--Predicted scores hovers around the average value of ~20ppg for each team
-
--The away team always loses, no matter what
+-Could use feature reduction or maybe additional complexity in the net
