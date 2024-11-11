@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proposal Group 63</title>
+    <title>Proposal</title>
     <style>
         body, html {
             margin: 10px;
             padding: 10px;
             height: 100%;
-            display: flex;
             justify-content: center;
             align-items: center;
         }
-        .container {
+        .proposal {
             justify-content: center;
             align-items: center;
             width: 80%;
@@ -28,10 +27,37 @@
         th, td {
             padding: 8px;
         }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            font-family: "Poppins", sans-serif;
+            z-index: 1000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar a{
+            color: black;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: aquamarine;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="proposal.html">Proposal</a>
+        <a href="midterm.html">Midterm Checkpoint</a>
+    </div>
+    <div class="proposal" id = "proposal">
         <h1>ML Project Proposal</h1>
         <h2>Introduction/Background</h2>
         <p>In this project, we will utilize ML algorithms to predict the final score, spread, and total points of NFL games by training on historic data and testing on the 2023 season outcomes.
