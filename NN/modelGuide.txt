@@ -1,0 +1,22 @@
+BEFORE TRAINING THE MODEL:
+
+-First, follow the directions in environment.yaml to create and activate the environment.
+
+-Once the environment is successfully created, to change to it in VScode, ctrl + shift + P,
+and then navigate to "Python: Select Interpreter". Choose 'nfl_score_prediction_env' from the list that appears.
+
+-You will have to restart your terminal for it to account for the change in environment.
+
+TO TRAIN THE MODEL:
+
+-Run 'python model.py' in the terminal
+
+TO TEST THE MODEL:
+
+-Run 'python predict.py' in the terminal
+
+
+
+CURRENT ISSUES:
+
+-Could use feature reduction or maybe additional complexity in the net
