@@ -36,5 +36,15 @@ git push origin <branch_name> #any other time
 ##### /ml-sports-predictions-63/Preprocessing/TRAINABLE_teamdata.csv: Dataset after it has been altered to be in the right format.
 ##### /ml-sports-predictions-63/TEST_PCA_STANDARDIZED.csv: Test dataset that has had PCA ran on it and has been standardized.
 ##### /ml-sports-predictions-63/TRAIN_PCA_STANDARDIZED.csv: Train dataset that has had PCA ran on it and has been standardized.
-
+#####/ml-sports-predictions-63/midterm.html: More html code for github pages
+#####/ml-sports-predictions-63/final.html: More html code for github pages
+#####/ml-sports-predictions-63/proposal.html: More html code for github pages
+#####/ml-sports-predictions-63/RandomForest/Notes.md: Notes on the model
+#####/ml-sports-predictions-63/RandomForest/RFmodel.py: Python file which defines the random forest model
+#####/ml-sports-predictions-63/RandomForest/TEST_2.csv: Data for random forest
+#####/ml-sports-predictions-63/RandomForest/TRAINING_2.csv: Training data for random forest
+#####/ml-sports-predictions-63/RandomForest/TESTRF.py: Tests the random forest model.
+#####/ml-sports-predictions-63/GradientBoost/gbModel.py: the gradient boost model python file we implemented.
+#####/ml-sports-predictions-63/GradientBoost/TRAINING_PCA_STANDARDIZED.csv:training data for gradient boost.
+#####/ml-sports-predictions-63/GradientBoost/TEST_PCA_STANDARDIZED.csv:Test data for gradient boost.
 
